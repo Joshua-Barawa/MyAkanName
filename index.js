@@ -92,11 +92,12 @@ $(document).ready(function(){
         }
         
 
-
+else{
     $('#response').html('Your AKAN name is: ' + name);
     $('#response').css({'color':'white', 'font-weight':'bold'
                             , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
-
+                            
+    }
 
          });
 
