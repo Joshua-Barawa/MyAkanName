@@ -5,6 +5,9 @@ $(document).ready(function(){
         var year = $('#year');
         var month = $('#month');
         var date = $('#date');
+
+
+
        
 
        
@@ -13,9 +16,7 @@ $(document).ready(function(){
         var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
         var name;
 
-        
-
-
+    
          if(gender.val() === "Male"){
 
            if(day === "Sunday"){
@@ -67,6 +68,16 @@ $(document).ready(function(){
             }
            
           }
+
+
+          if(year.val() === ''){
+            $('#y-error').html("Please input year!!");
+        }
+        else if(year.val().length > 4 || year.val().length < 4){
+            $('#y-error').html("Year length cannot be less or greater than 4!!");
+        }
+        
+
 
         $('#response').html('Your AKAN name is: ' + name);
         $('#response').css({'color':'white', 'font-weight':'bold'
