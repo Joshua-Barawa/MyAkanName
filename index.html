@@ -11,7 +11,11 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
+
+    <p id="response">Fill the form to see your AKAN name</p>
+    <div class="hero">
+        
      <div class="description"> 
          <img src="/Akan-designstyle-jungle-m.png" alt="" />
 
@@ -28,11 +32,20 @@
         <option value="female">Female</option>
     </select><br/>
 
-    <input id="year" type="number" placeholder="Enter your birth year.." ><br/>
-    <input id="month" type="number" placeholder="Enter your birth month.." ><br/>
-    <input id="date" type="number" placeholder="Enter your birth date.."><br/>
+    <input id="year" type="number" placeholder="Enter your birth year.." maxlength="4"><br/>
+    <input id="month" type="number" placeholder="Enter your birth month.." required=" "><br/>
+    <input id="date" type="number" placeholder="Enter your birth date.." required=" "><br/>
     <button id="btn">Genarate Name</button>
 </div>
+
+</div>
+
+
+<div class="modal">
+    <button id="m-btn">Got it!</button>
+</div>
+
+
 
      </div>
 

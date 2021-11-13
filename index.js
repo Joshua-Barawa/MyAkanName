@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
 
         var gender = $('#gender');
@@ -13,10 +12,10 @@ $(document).ready(function(){
         var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
 
-        console.log(gender.val());
-    
+        $('#response').html('Your AKAN name is:' + day);
+        $('#response').css({'color':'brown', 'font-weight':'bold'});
+      
          });
 
 
 });
-
