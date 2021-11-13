@@ -9,13 +9,37 @@ body{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 .container{
-    padding: 20px 8%;
-    margin: 0px 20px;
+    padding: 150px 8%;
+    margin: 100px 220px;
     text-align: center;
+    display: flex;
+    box-shadow: 0px 0px 7px ;
+    border-radius: 15px;
+   
 }
+
+.description{
+    width: 50%;
+    
+}
+
+.form{
+width: 50%;
+}
+
+.form #gender{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(164, 185, 185);
+    width: 74%;
+    font-size: 15px;
+ }
 
 .form input{
    padding: 10px 10px;
@@ -23,9 +47,10 @@ body{
    border-radius: 10px;
    border: none;
    background-color: rgb(164, 185, 185);
+   width: 70%;
 }
 
-.form input:focus{
+.form #gender:focus, input:focus{
     outline: none;
   }
 

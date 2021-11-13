@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-   
+        var gender = $('#gender');
         var year = $('#year');
         var month = $('#month');
         var date = $('#date');
@@ -10,9 +10,10 @@ $(document).ready(function(){
 
        
       $('#btn').click(function(){
-        var dayOfWeek =  (((year.val().slice(0, 2)/4) -2*year.val().slice(0, 2)-1) + ((5*year.val().slice(2, 4)/4) ) + ((26*(month.val()+1)/10)) + date.val() )%7;
+        var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
 
-         console.log(dayOfWeek);
+        console.log(gender.val());
     
          });
 
