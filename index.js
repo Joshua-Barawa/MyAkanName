@@ -2,15 +2,18 @@
 
 $(document).ready(function(){
 
-    var person = {
-        year: document.getElementById('year').val(),
-        month: document.getElementById('month').val(),
-        date: document.getElementById('date').val()
+   
+        var year = $('#year');
+        var month = $('#month');
+        var date = $('#date');
        
-       }
+
        
-      $('btn').click(function(){
-           console.log(person)
+      $('#btn').click(function(){
+        var dayOfWeek =  (((year.val().slice(0, 2)/4) -2*year.val().slice(0, 2)-1) + ((5*year.val().slice(2, 4)/4) ) + ((26*(month.val()+1)/10)) + date.val() )%7;
+
+         console.log(dayOfWeek);
+    
          });
 
 
