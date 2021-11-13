@@ -14,7 +14,7 @@ body{
 
 .container{
     padding: 10px 8%;
-    margin: 100px 220px;
+    margin: 0px 0px;
     text-align: center;
 }
 
@@ -29,6 +29,7 @@ font-size: 30px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
+    height: 400px;
 }
 
 .description{
@@ -38,7 +39,7 @@ font-size: 30px;
 
 .form{
     position: relative;
-width: 50%;
+   width: 50%;
 }
 
 
@@ -84,4 +85,8 @@ width: 50%;
 
  .form input:focus{
    outline: none;
+ }
+
+ span{
+     color: red;
  }
