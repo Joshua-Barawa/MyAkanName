@@ -71,19 +71,33 @@ $(document).ready(function(){
 
 
           if(year.val() === ''){
-            $('#y-error').html("Please input year!!");
+            $('#y-error').html("Year is required!!");
         }
         else if(year.val().length > 4 || year.val().length < 4){
             $('#y-error').html("Year length cannot be less or greater than 4!!");
         }
+
+         if(month.val() === ''){
+            $('#m-error').html("Month is required!!");
+        }
+        else if(month.val() > 12 || month.val() < 1){
+            $('#m-error').html("Month range is between 1-12!!");
+        }
+
+         if(date.val() === ''){
+            $('#d-error').html("Date is required!!");
+        }
+        else if(date.val() > 31 || date.val() < 1){
+            $('#d-error').html("Date range is between 1-31!!");
+        }
         
 
 
-        $('#response').html('Your AKAN name is: ' + name);
-        $('#response').css({'color':'white', 'font-weight':'bold'
-                                , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
+    $('#response').html('Your AKAN name is: ' + name);
+    $('#response').css({'color':'white', 'font-weight':'bold'
+                            , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
 
-    
+
          });
 
 
