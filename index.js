@@ -1,11 +1,18 @@
 
-var person = {
- year: document.getElementById('year').val(),
- month: document.getElementById('month').val(),
- date: document.getElementById('date').val()
 
-}
+$(document).ready(function(){
 
-document.getElementById('btn').onclick(function(){
-  console.log()
+    var person = {
+        year: document.getElementById('year').val(),
+        month: document.getElementById('month').val(),
+        date: document.getElementById('date').val()
+       
+       }
+       
+      $('btn').click(function(){
+           console.log(person)
+         });
+
+
 });
+
