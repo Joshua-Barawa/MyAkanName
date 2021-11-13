@@ -13,6 +13,9 @@ $(document).ready(function(){
         var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
         var name;
 
+        
+
+
          if(gender.val() === "Male"){
 
            if(day === "Sunday"){
@@ -65,15 +68,11 @@ $(document).ready(function(){
            
           }
 
+        $('#response').html('Your AKAN name is: ' + name);
+        $('#response').css({'color':'white', 'font-weight':'bold'
+                                , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
 
-
-
-
-         $('#response').html('Your AKAN name is:' + name);
-        $('#response').css({'color':'brown', 'font-weight':'bold'});
-
-
-      
+    
          });
 
 

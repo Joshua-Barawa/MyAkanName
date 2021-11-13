@@ -44,7 +44,7 @@ width: 50%;
 
 .form #gender{
     padding: 10px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
     border: none;
     background-color: rgb(164, 185, 185);
@@ -52,14 +52,18 @@ width: 50%;
     font-size: 15px;
  }
 
+ .form #row{
+  margin-bottom: 25px;
+ }
+
+
 .form input{
-   padding: 10px 10px;
-   margin-bottom: 30px;
-   border-radius: 10px;
-   border: none;
-   background-color: rgb(164, 185, 185);
-   width: 70%;
-}
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(164, 185, 185);
+    width: 70%;
+ }
 
 .form #gender:focus, input:focus{
     outline: none;
