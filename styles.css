@@ -19,7 +19,7 @@ body{
 }
 
 #response{
-font-size: 30px;
+font-size: 25px;
 }
 
 .hero{
@@ -29,7 +29,7 @@ font-size: 30px;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    height: 400px;
+
 }
 
 .description{
@@ -76,6 +76,7 @@ font-size: 30px;
      border-radius: 10px;
      background-color: rgb(108, 209, 209);
      cursor: pointer;
+     margin-bottom: 20px;
  }
 
  .form #btn:hover{
@@ -89,4 +90,27 @@ font-size: 30px;
 
  span{
      color: red;
+ }
+
+
+ @media only screen and (max-width: 850px) {
+     .hero{
+         flex-direction: column;
+     }
+
+     .description{
+         width: 90%;
+     }
+
+     #row{
+         width: 100%;
+     }
+
+     img{
+         width:50%;
+     }
+
+     .form input, #gender{
+width: 100%;
+     }
  }

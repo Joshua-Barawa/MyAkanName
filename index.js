@@ -97,6 +97,7 @@ else{
     $('#response').html('You were born on ' + day + ' and your AKAN name is ' + name);
     $('#response').css({'color':'white', 'font-weight':'bold'
                             , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
+                            $('span').text('');
                             
     }
 
