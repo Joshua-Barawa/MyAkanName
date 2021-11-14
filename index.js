@@ -79,7 +79,7 @@ $(document).ready(function(){
         }
 
          if(month.val() === ''){
-            $('#m-error').html("Month is required!!");
+            $('#m-error').html("This field is required!!");
         }
         else if(month.val() > 12 || month.val() < 1){
             $('#m-error').html("Month ranges between 1-12 !!");
