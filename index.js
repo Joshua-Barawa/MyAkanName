@@ -16,7 +16,7 @@ $(document).ready(function(){
         var day = week[new Date(year.val()+'/'+month.val()+'/'+date.val()).getDay()];
         var name;
 
-    
+    ////////////////Check AKAN NAME IF GENDER IS MALE/////////////
          if(gender.val() === "Male"){
 
            if(day === "Sunday"){
@@ -43,6 +43,7 @@ $(document).ready(function(){
           
          }
 
+         /////////CHECK AKAN NAME IF GENDER IS FEMALE////////////////
          if(gender.val() === "Female"){
 
             if(day === "Sunday"){
@@ -69,7 +70,7 @@ $(document).ready(function(){
            
           }
 
-
+////////////////CHECK ERRORS IN FORM INPUTS//////////////////
           if(year.val() === ''){
             $('#y-error').html("Year is required!!");
         }
@@ -93,7 +94,7 @@ $(document).ready(function(){
         
 
 else{
-    $('#response').html('Your AKAN name is: ' + name);
+    $('#response').html('You were born on ' + day + ' and your AKAN name is ' + name);
     $('#response').css({'color':'white', 'font-weight':'bold'
                             , "background-color": "brown", "border-radius":"20px", "padding":"5px 0px"});
                             
