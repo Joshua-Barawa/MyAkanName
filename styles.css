@@ -45,6 +45,7 @@ font-size: 25px;
 
 .form #gender{
     padding: 10px 10px;
+    margin-top: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
     border: none;
@@ -54,6 +55,7 @@ font-size: 25px;
  }
 
  .form #row{
+     
   margin-bottom: 25px;
  }
 
@@ -110,7 +112,11 @@ font-size: 25px;
          width:50%;
      }
 
-     .form input, #gender{
-width: 100%;
+     .form{
+width: 80%;
+     }
+
+     .form #gender{
+width: 75%;
      }
  }

@@ -72,7 +72,7 @@ $(document).ready(function(){
 
 ////////////////CHECK ERRORS IN FORM INPUTS//////////////////
           if(year.val() === ''){
-            $('#y-error').html("Year is required!!");
+            $('#y-error').html("Year is required !!");
         }
         else if(year.val().length > 4 || year.val().length < 4){
             $('#y-error').html("Year length cannot be less or greater than 4!!");
