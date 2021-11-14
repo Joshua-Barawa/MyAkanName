@@ -86,7 +86,7 @@ $(document).ready(function(){
         }
 
          if(date.val() === ''){
-            $('#d-error').html("Date is required!!");
+            $('#d-error').html("This field is required!!");
         }
         else if(date.val() > 31 || date.val() < 1){
             $('#d-error').html("Date ranges between 1-31 !!");
