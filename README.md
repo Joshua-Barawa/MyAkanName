@@ -19,6 +19,7 @@
 This project is a program that gives a user an akan name depending on the day of the week he/she was born
 ## Visuals
 This is a screenshot of the webpage
+![Screenshot from 2021-11-14 17-40-52](https://user-images.githubusercontent.com/91249358/141686044-30e92386-8fdc-4788-b466-40ab28f95807.png)
 ## Contributors
 * Joshua Barawa
 ## Setup/Installation Requirements
