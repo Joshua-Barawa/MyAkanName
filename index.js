@@ -79,14 +79,14 @@ $(document).ready(function(){
         }
 
          if(month.val() === ''){
-            $('#m-error').html("This field is required!!");
+            $('#m-error').html("This field is required !!");
         }
         else if(month.val() > 12 || month.val() < 1){
             $('#m-error').html("Month ranges between 1-12 !!");
         }
 
          if(date.val() === ''){
-            $('#d-error').html("This field is required!!");
+            $('#d-error').html("This field is required !!");
         }
         else if(date.val() > 31 || date.val() < 1){
             $('#d-error').html("Date ranges between 1-31 !!");
